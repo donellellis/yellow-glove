@@ -1,0 +1,84 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+
+header{
+    background-color: $backgroundColorPrimary;
+}
+
+.main-nav{
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        display: block;
+        color: $textColorPrimary;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 20px;
+        &:hover{
+            // color lightening function
+            background:lighten($backgroundColorPrimary, 6);
+        }
+    }
+}
+
+.main-cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    background-image: url(../img/yellow-gloves.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .main-textblock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+        color: $textColorPrimary;
+
+        h1{
+            font-size: 70px;
+            padding: 15px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        h2{
+            font-weight: 400;
+        }
+
+        .graphic-logo-container{
+            @include round-graphic;
+        }
+
+    }
+
+    .main-social{
+        position: relative;
+        top: 110px;
+
+        ul{
+            display: flex;
+            justify-content: center;
+        }
+       
+        .fab{
+             color: white;
+             font-size: 35px;
+             display: block;
+             padding: 0px 7px;
+        }
+    }
+}
+
+
+
+
+
