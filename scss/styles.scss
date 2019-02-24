@@ -25,21 +25,12 @@ header{
 }
 
 .main-cover{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 650px;
-    width: 100%;
-    background-image: $imageCover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+   @include centered-column;
+   @include cover-image;
+   justify-content: center;
+    
     .main-textblock{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include centered-column;
         width: 450px;
         color: $textColorPrimary;
 
@@ -58,51 +49,31 @@ header{
         img{
             @include round-graphic;
         }
-
     }
 
     .main-social{
         position: relative;
         top: 110px;
-
-        ul{
-            display: flex;
-            justify-content: center;
-        }
-       
-        .fab{
-             color: white;
-             font-size: 35px;
-             display: block;
-             padding: 0px 7px;
-        }
+        @include social;
     }
 }
 
 .about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include centered-column;
     margin: 75px 0px;
     color: $textColorSecondary;
 
     li{
         width: 275px;
         margin: 0px 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include centered-column
     }
 
     h1{
-        margin: 30px;
-        font-size: 40px;
-        font-weight: 400;
-        text-transform: uppercase;
+        @include heading;
     }
 
     h2{
-        font-weight: 700;
         margin: 10px 0px;
     }
 
@@ -117,6 +88,90 @@ header{
     }
 }
 
+.contact{
+    @include cover-image;
+    background-image: $imageContact;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .contact-textbox{
+        color: $textColorPrimary;
+        padding: 30px;
+        border: 3px white solid;
+        margin-right: 12%;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    p{
+        margin: 10px 0px;
+    }
+}
+
+.book{
+    @include cover-image;
+    @include centered-column;
+    justify-content: center;
+    background-image: $imageBook;
+    color: $textColorSecondary;
+
+    h1{
+        @include heading;
+    }
+
+    #book-form{
+        border: black 3px solid;
+        padding: 30px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+
+        .book-input{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        input, textarea{
+            width: 200px;
+            border: black 1px solid;
+            background-color: transparent;
+            outline: none;
+        }
+
+        #message{
+            height: 100px;
+            &::placeholder{
+                vertical-align: text-top;
+            }
+        }
+
+        #submit{
+            align-self: center;
+            padding: 5px 15px;
+            margin-top: 20px;
+            width: initial;
+            background-color: $backgroundColorPrimary;
+            color: $textColorPrimary;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 300;
+            &:hover{
+                background:lighten($backgroundColorPrimary, 6);
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $backgroundColorPrimary;
+    padding: 15px;
+    @include social;
+}
 
 
 

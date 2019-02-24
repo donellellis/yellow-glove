@@ -6,3 +6,39 @@
     padding: 20px;
     object-fit: contain;
 }
+
+@mixin cover-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: $imageCover;
+    height: 650px;
+    width: 100%;
+}
+
+@mixin centered-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin heading{
+    margin: 30px;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@mixin social{
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .fab{
+         color: white;
+         font-size: 35px;
+         display: block;
+         padding: 0px 7px;
+    }
+}
