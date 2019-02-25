@@ -1,5 +1,5 @@
 # Yellow Glove
-###SCSS Study Project
+### SCSS Study Project
 
 Yellow Glove an eco-friendly bee removal and relocation service by local beekeepers and craftsmen. The website was created as an exploratory project to learn SCSS and includes variables and mixins. 
 
@@ -11,6 +11,8 @@ https://donellellis.github.io/yellow-glove/
 Clone this repository on GitHub and change into the directory.
 
 ![Yellow Glove](https://i.imgur.com/Qm4Gxo2.jpg)
+
+![Yellow Glove](https://i.imgur.com/2rTnyDL.jpg)
 
 ## Installing
 
