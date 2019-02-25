@@ -3,6 +3,10 @@ html, body, ul, li, h1, h2, p{
     padding: 0;
   }
 
+html{
+    scroll-behavior: smooth
+}
+
 body{
     font-family: 'Roboto Condensed', sans-serif;
   }

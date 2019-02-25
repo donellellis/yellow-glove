@@ -3,6 +3,10 @@ html, body, ul, li, h1, h2, p {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -17,6 +21,9 @@ a {
 
 header {
   background-color: #373737;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .main-nav ul {
