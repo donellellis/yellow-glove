@@ -10,11 +10,10 @@ https://donellellis.github.io/yellow-glove/
 
 Clone this repository on GitHub and change into the directory.
 
-![Ancillary](https://i.imgur.com/o01n8mg.jpg?2)
+![Yellow Glove](https://i.imgur.com/Qm4Gxo2.jpg)
 
 ## Installing
 
-```
 To launch the website locally, run
 ```
 $open index.html
